@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<style>
+  .jumbotron {
+      background-color: #f0f0f0;
+      padding: 2rem 1rem;
+      margin-bottom: 2rem;
+  }
+
+  .btn-login {
+      background-color: #007bff;
+      border-color: #007bff;
+  }
+
+  .btn-signup {
+      background-color: #28a745;
+      border-color: #28a745;
+  }
+</style>
+<div style="height: 20px;"></div>
+<div class="container">
+  <div class="row">
+      <div class="col-md-8 offset-md-2">
+          <div class="jumbotron">
+              <h1 class="display-4">Welcome to our File Manager</h1>
+              <p class="lead">A simple file management application where you can securely store and access your
+                  files from anywhere.</p>
+              <hr class="my-4">
+              <p>Create an account to start uploading and managing your files.</p>
+              <a class="btn btn-login btn-lg me-2" href="{{url_for('auth_bp.login')}}" role="button">Login</a>
+              <a class="btn btn-signup btn-lg" href="{{url_for('auth_bp.signup')}}" role="button">Sign Up</a>
+          </div>
+      </div>
+  </div>
+</div>
+{% endblock %}
