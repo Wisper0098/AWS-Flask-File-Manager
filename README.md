@@ -19,10 +19,10 @@ This Flask web application allows users to upload and manage files. It integrate
    ```
 
    # Set up AWS Resources:
-   # - Create an Amazon RDS Instance for PostgreSQL and note down the connection details.
-   # - Create an S3 Bucket for file storage and configure access permissions.
+   -- Create an Amazon RDS Instance for PostgreSQL and note down the connection details.
+   -- Create an S3 Bucket for file storage and configure access permissions.
 
-   # Environment Variables: Set up AWS credentials, database connection details, and Flask app configuration. Refer to `.env`.
+   -- Environment Variables: Set up AWS credentials, database connection details, and Flask app configuration. Refer to `.env`.
 
 2. Build and run a Docker container
    ```bash
